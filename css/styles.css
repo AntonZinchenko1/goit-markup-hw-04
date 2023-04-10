@@ -303,7 +303,7 @@ line-height: 1.5;
 }
 
 .team-name {
-margin: 32px 16px;
+padding: 32px 16px;
 align-items: center;
 }
 
@@ -405,8 +405,6 @@ background-color: var(--footer-hover-social);
 .customers-list {
     display: flex;
     gap: 24px;
-    padding: 0;
-    margin: 0;
     justify-content: center;
     align-items: center;
     list-style: none;
@@ -429,10 +427,7 @@ background-color: var(--footer-hover-social);
 }
 
 .customers-icon {
-    width: 104px;
-    height: 56px;
     fill: currentColor;
-
 }
 
 .customers-link:hover, .customers-link:focus {
@@ -542,7 +537,7 @@ background-color: var(--footer-hover-social);
 .control .btn:hover, .control .btn:focus{
     color: var(--white);
     background-color: var(--accent-color-OCEAN);
-    border: none;
+    border: 1px solid var(--accent-color-OCEAN);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -552,22 +547,26 @@ background-color: var(--footer-hover-social);
     
 }
 
-.slider .item {
+.slider-item {
     width: 360px;
     height: 420px;
     margin-right: 24px;
     margin-bottom: 48px;
 }
 
-.slider .item:nth-child(3n) {
+.slider-item:nth-child(3n) {
     margin-right: 0;
 }
 
-.slider .item:nth-last-child(-n+3) {
+.slider-item:nth-last-child(-n+3) {
     margin-bottom: 0;
 }
 
-.slider .item:hover, .slider .item:focus {
+.slider-link {
+    display: block;
+}
+
+.slider-link:hover, .slider-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
